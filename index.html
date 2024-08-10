@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr LuXuRy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .hero-img {
+            background: url(img/drluxury.jpg) no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        .hero-content {
+            text-align: center;
+            padding: 0 2em;
+        }
+        .middle{
+            margin-left: 30%;
+        }
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            font-weight: 700;
+            color: #fff;
+            padding-left: 30%;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 1em 0;
+            color: #f0f0f0;
+        }
+        .cta-buttons {
+            margin-top: 1.5em;
+            padding-left: 30%;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+        .cta-buttons a {
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 0.8em 2em;
+            border-radius: 8px;
+            color: #fff;
+            background-color: #000;
+            transition: background-color 0.3s, color 0.3s;
+            border: 2px solid transparent;
+        }
+        .cta-buttons a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .search-bar {
+            position: absolute;
+            top: 2em;
+            right: 1em;
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            padding: 0.5em;
+            width: 300px;
+            max-width: 100%;
+        }
+        .search-bar input {
+            border: none;
+            padding: 0.5em;
+            border-radius: 5px;
+            font-size: 1em;
+            flex: 1;
+        }
+        .search-bar button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 1.5em;
+            padding-left: 0.5em;
+        }
+        .nav-bar {
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            display: flex;
+            gap: 1em;
+            z-index: 1;
+        }
+        .nav-bar a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: white;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-bar a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+        }
+        .footer-buttons {
+            margin-top: auto; /* Pushes the footer to the bottom */
+           
+            padding: 1em 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-buttons a {
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 0.8em 2em;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #007bff;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0 0.5em;
+            display: inline-block;
+           height: 2rem;
+           width: 3.5rem;
+        }
+        .footer-buttons a:hover {
+            background-color: #0056b3;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="home.html">Home</a>
+            <a href="store.html">Store</a>
+            <a href="shop.html">cart</a>
+            <a href="about.html">about</a>
+        </div>
+    </header>
+    <div class="hero-img">
+        <div class="hero-content">
+            <h1 >Dr LuXuRy</h1>
+            <p class="middle"> <marquee behavior="" direction=""> Discover the pinnacle of fashion and luxury. From exquisite jewelry to stylish apparel, we offer the finest selections just for you.</marquee></p>
+            <div class="cta-buttons">
+                <a href="get.html">Get Started</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="footer-buttons">
+          <a href="sign.html">Sign In</a>
+          <a href="login.html">Login</a>
+      </div>
+    </div>
+</body>
+</html>

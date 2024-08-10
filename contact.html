@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="drluxury" />
+    <meta name="description" content="contact" />
+    <title>drluxury</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <style>
+      
+    *{
+      color: aliceblue;
+      box-sizing: border-box;
+     
+      overflow-y: hidden;
+      /* padding: 0;
+      margin: 0; */
+    }
+    body{ 
+
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+   
+    }
+    .icon{
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .leftside{
+      height: 25%;
+      background: linear-gradient(to bottom, #4fa1d8, #acb6e5);
+      margin-top: 0;
+      margin-left: 9rem;
+      padding: 4rem 2rem 8rem 2rem;
+      border-radius: 1.5em;
+    }
+    .main{
+      display:  flex;
+      justify-content: space-around;
+      
+    }
+    .header{
+      display: flex;
+      justify-content: space-around;
+    }
+    .header__ul{
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+    }
+    li{
+      padding: 10px;
+    }
+    a{
+      text-decoration: none;
+    }
+
+  .contact__textarea{
+    width: 20rem;
+    height: 15em;
+    border-radius: 10%;
+  
+  }
+  .contact__input{
+    background-color: #000000;
+    width: 75%;
+    height: 45px;
+    border-radius: 10px;
+  }
+  .contact__textarea{
+    background-color: #000000;
+    width: 70%;
+    height: 210px;
+    text-align: center;
+  }
+  .contact__label1{
+    margin-right: 6rem;
+  }
+  .contact__button{
+    background: linear-gradient(to bottom, #4fa1d8, #acb6e5);
+    border-radius: 10px;
+    height: 50px;
+    width: 20%;
+    
+  }
+  .separate{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+    
+    
+
+
+  </style>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Contact Us</h1>
+      <nav aria-label="Tertiary-navigation" class="header__nav">
+        <ul class="header__ul">
+          <li> <a href="index.html">Home</a> </li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="index.html#Menu">Menu</a></li>
+          <li><a href="store.html">Store</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- <section class="hero">
+      <figure>
+        <img
+          src="img/tacos_close_up_1000x649.png"
+          alt="Taco Image"
+          title="Taco delicacies"
+          width="1000"
+          height="649"
+        />
+        <figcaption class="offscreen">Little Taco Shop Tacos</figcaption>
+      </figure>
+    </section> -->
+
+    <main class="main">
+      <article class="leftside">
+        <h2>Get in touch</h2>
+        <h3>Visit us</h3>
+        <p>come say hello at our office HQ. <B>KOladaisi UNiversity</B>
+        </p>
+<!-- yet to finish -->
+        <h3>Chat to us</h3>
+        <p>Our frendly team is here to help. email: <a href="email:fawaz adekola52@gmail.com">fawaz adekola52@gmail.com </a></p>
+
+        <h3>Call us</h3>
+        <p>Mon-sun from 12am - 12pm</p>
+        phone: <a href="tel:+7025771985">702-577-1985</a>
+
+        <p>Social medial</p>
+        <div class="icon">
+        <p><i class="fa-brands fa-instagram"></i></p>
+        <p><i class="fa-brands fa-facebook"></i></p>
+        <p><i class="fa-brands fa-linkedin"></i></p>
+        <p><i class="fa-brands fa-twitter"></i></p>
+      </div>
+       
+      </article>
+      
+      <article class="rightside">
+     
+        <form
+          action="https://formspree.io/f/xjkbrekv"
+          method="POST"
+          class="contact__form"
+        >
+        <div class="separate">
+            <p class="contact__p" >
+              <label class="contact__label1" for="name">First Name:&nbsp</label>
+              <input
+                class="contact__input"
+
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+            <p class="contact__p" >
+              <label class="contact__label1" for="l_name">Last Name:&nbsp</label>
+              <input
+                class="contact__input"
+
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+          </div>
+
+            <p class="contact__p">
+              <label class="contact__label" for="email">Email:&nbsp</label>
+              <br>
+              <input
+                class="contact__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="tel">Tel:&nbsp&nbsp&nbsp</label>
+              <br>
+              <input type="number" name="number" id="number" placeholder="your number" autocomplete="on" class="contact__input">
+            </p>
+
+            <p class="contact__p">
+              <label class="contact__label" for="message">Your Message</label>
+              <br />
+              <textarea
+                class="contact__textarea"
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="   Type your message here"
+              ></textarea>
+            </p>
+          </fieldset>
+          <button class="contact__button" type="submit">Send</button>
+          <button class="contact__button" type="reset">Reset</button>
+        </form>
+        <!-- <p class="top">
+          <a href="#">Back to top</a>
+        </p> -->
+      </article>
+    </main>
+    <br />
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy;</span>
+        <span class="'nowrap">Dr luxury store</span>
+      </p>
+    </footer>
+  </body>
+</html>
