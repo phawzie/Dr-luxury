@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("img/drluxury.jpg") no-repeat center center;
+            background-size: cover;
+        }
+        .nav-bar {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+        #cart {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+        #cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+        #cart-items li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        #cart-summary {
+            margin-top: 20px;
+        }
+        #checkout-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+        }
+        #checkout-button a {
+            color: #fff;
+            text-decoration: none;
+        }
+        #checkout-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <div class="nav-bar">
+        <a href="store.html">Store</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </div>
+    
+    <main>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </ul>
+            <div id="cart-summary">
+                <p>Total: $<span id="total-price">0</span></p>
+                <button id="checkout-button"><a href="paym.html">PAY NOW</a></button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript to handle cart items and total price calculation
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartItemsList = document.getElementById('cart-items');
+            const totalPriceElement = document.getElementById('total-price');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+            let total = 0;
+
+            cart.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.name} - $${item.price}`;
+                cartItemsList.appendChild(listItem);
+                total += item.price;
+            });
+
+            totalPriceElement.textContent = total.toFixed(2);
+        });
+    </script>
+</body>
+</html>
