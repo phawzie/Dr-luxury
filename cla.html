@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Video</title>
+    <link rel="stylesheet" href="css/cla.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="video" width="800" height="600" controls>
+            <source src="class-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="controls">
+            <button id="next-button">Next</button>
+            <button id="comment-button">Comment</button>
+            <div id="comment-form" style="display: none;">
+                <textarea id="comment-text" placeholder="Enter your comment"></textarea>
+                <button id="submit-comment-button">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById('video');
+        const nextButton = document.getElementById('next-button');
+        const commentButton = document.getElementById('comment-button');
+        const commentForm = document.getElementById('comment-form');
+        const commentText = document.getElementById('comment-text');
+        const submitCommentButton = document.getElementById('submit-comment-button');
+
+        nextButton.addEventListener('click', () => {
+            // Add logic to navigate to the next video
+        });
+
+        commentButton.addEventListener('click', () => {
+            commentForm.style.display = 'block';
+        });
+
+        submitCommentButton.addEventListener('click', () => {
+            const comment = commentText.value;
+            // Add logic to submit the comment to the server
+            commentText.value = '';
+            commentForm.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
